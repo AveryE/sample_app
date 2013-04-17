@@ -1,0 +1,4 @@
+attempting ch 10 exer 5
+
+did exer 3?
+<!--        <%= render : 'shared/delete_post', f:micropost %>-->

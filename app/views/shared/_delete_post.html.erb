@@ -1,0 +1,6 @@
+<% if current_user?(f.user) %>
+<%= link_to "delete", f, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: f.content %>
+<% end %>
+
