@@ -3,7 +3,8 @@ class UsersController < ApplicationController
                 only: [:index, :edit, :update, :destroy, :following, :followers]
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: :destroy
-  #not user
+  #before_filter :not_user, only: [:new, :create]
+
 
   def new
     @user = User.new
